@@ -1,6 +1,6 @@
 #!/bin/bash
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/../util-scripts/logging.sh"
+source "$SCRIPT_DIR/../linux/util-scripts/logging.sh"
 
 if [ -z "$USER_FONTS_DIRECTORY" ]; then
     USER_FONTS_DIRECTORY="$HOME/.local/share/fonts/"
@@ -17,7 +17,7 @@ if [ ! -d "./fonts" ]; then
   exit 1
 fi
 
-cp -rpv ./fonts/**/*.ttf "$USER_FONTS_DIRECTORY"
+cp -rpv $SCRIPT_DIR/fonts/**/*.ttf "$USER_FONTS_DIRECTORY"
 
 # Rebuild the font cache
 info "rebuilding font cache..."
