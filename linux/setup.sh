@@ -7,3 +7,6 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Install git
 source "$SCRIPT_DIR/util-scripts/install_git.sh"
+
+# Copy wallpapers
+cp -rpv "$SCRIPT_DIR/../wallpapers/" "$HOME/Pictures/"
