@@ -112,4 +112,4 @@ export PATH=$HOME/.local/bin:$PATH
 # Set NVM path
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILppLBHlRJ4aYf6DD3uRAOupcd+d6wRKKGTQAQGVKBwu bhunesh2k14@live.com
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
